@@ -11,14 +11,16 @@ def check_input(value):
             break
     return userInput
 
-userInput = check_input("Pick a number: ")
+# Check Values Function
+def raindrop():
+    if userInput % 3 == 0:
+        print("Pling")
+    elif userInput % 5 == 0:
+        print("Plang")
+    elif userInput % 7 == 0:
+        print("Plong")
+    else:
+        print(userInput)
 
-# Check Values
-if userInput % 3 == 0:
-    print("Pling")
-elif userInput % 5 == 0:
-    print("Plang")
-elif userInput % 7 == 0:
-    print("Plong")
-else:
-    print(userInput)
+userInput = check_input("Pick a number: ")
+raindrop()
